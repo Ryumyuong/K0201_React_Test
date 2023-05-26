@@ -1,5 +1,6 @@
 import React from 'react';
 import Avatar from './Avatar';
+import logo from './bread2.jpg';
 
 const styles = {
   wrapper: {
@@ -37,7 +38,7 @@ const Comment = (props) => {
   return (
     <div style={styles.wrapper}>
       <div style={styles.imageContainer}>
-        <Avatar />
+        <Avatar src={logo} alt="사진1" style={styles.image} />
       </div>
       <div style={styles.contentContainer}>
         <span style={styles.nameText}>{props.name}</span>
