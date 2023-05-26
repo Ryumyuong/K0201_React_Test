@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './bread2.jpg';
+import Avatar from './Avatar';
 
 const styles = {
   wrapper: {
@@ -37,13 +37,12 @@ const Comment = (props) => {
   return (
     <div style={styles.wrapper}>
       <div style={styles.imageContainer}>
-        <img src={logo} style={styles.image} alt="로컬사진" />
+        <Avatar />
       </div>
       <div style={styles.contentContainer}>
         <span style={styles.nameText}>{props.name}</span>
         <span style={styles.CommentText}>{props.comment}</span>
       </div>
-      <h1>테스트 컴포넌트</h1>
     </div>
   );
 };
