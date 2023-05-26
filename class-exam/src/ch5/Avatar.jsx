@@ -1,10 +1,9 @@
 import React from 'react';
-import logo from './bread2.jpg';
 
-const Avatar = () => {
+const Avatar = (props) => {
   return (
     <div>
-      <img src={logo} alt="로컬사진" />
+      <img src={props.src} alt={props.alt} style={props.style} />
     </div>
   );
 };
