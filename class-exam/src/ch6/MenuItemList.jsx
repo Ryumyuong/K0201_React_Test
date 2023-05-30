@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import MenuItem from './MenuItem';
 
 const reserveNoti = [
-    {id:1, menu: "돈가스"},
-    {id:2, menu: "햄버거"},
-    {id:3, menu: "자장면"},
-    {id:4, menu: "국밥"}
-]
+  { id: 1, menu: '돈가스' },
+  { id: 2, menu: '햄버거' },
+  { id: 3, menu: '자장면' },
+  { id: 4, menu: '국밥' },
+];
 
-var timer
+var timer;
 
 class MenuItemList extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       noti: [],
@@ -30,7 +30,7 @@ class MenuItemList extends Component {
           noti: noti,
         });
       } else {
-        clearInterval(timer)
+        clearInterval(timer);
         // this.setState({
         //   noti: [],
         // });
