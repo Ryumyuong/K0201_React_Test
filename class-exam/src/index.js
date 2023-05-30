@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ConfirmDialog from './ch4/ConfirmDialog';
 import Tick from './ch4_exam/Tick';
@@ -10,11 +9,12 @@ import MyTest1 from './ch4_exam/MyTest1';
 import CommentList from './ch5/CommentList';
 import NotiList from './ch6/NotiList';
 import MenuItemList from './ch6/MenuItemList';
+import TestSample from './test_sample/TestSample';
 
 // 생성주기를 테스트 하는 코드에서 React.StrictMode를 제거하고 실행하는게 가독성 면에서 좋다.
 ReactDOM.render(
   <React.StrictMode>
-    <MenuItemList/>
+    <TestSample/>
   </React.StrictMode>,
   document.getElementById('root')
 );
