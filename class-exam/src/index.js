@@ -11,11 +11,12 @@ import NotiList from './ch6/NotiList';
 import MenuItemList from './ch6/MenuItemList';
 import TestSample from './test_sample/TestSample';
 import NameList from './test_sample/NameList';
+import Counter from './ch7/Counter';
 
 // 생성주기를 테스트 하는 코드에서 React.StrictMode를 제거하고 실행하는게 가독성 면에서 좋다.
 ReactDOM.render(
   <React.StrictMode>
-    <NameList/>
+    <Counter/>
   </React.StrictMode>,
   document.getElementById('root')
 );
