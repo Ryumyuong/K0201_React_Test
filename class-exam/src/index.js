@@ -17,11 +17,12 @@ import TestAfter from './ch7-2/TestAfter';
 import BeforeUseCallback from './ch7-3/BeforeUseCallback';
 import AfterUseCallback from './ch7-3/AfterUseCallback';
 import TestInputTest from './ch7/TestInputTest';
+import Accommodate from './ch7-0/Accommodate';
 
 // 생성주기를 테스트 하는 코드에서 React.StrictMode를 제거하고 실행하는게 가독성 면에서 좋다.
 ReactDOM.render(
   <React.StrictMode>
-    <TestInputTest />
+    <Accommodate />
   </React.StrictMode>,
   document.getElementById('root'),
 );
