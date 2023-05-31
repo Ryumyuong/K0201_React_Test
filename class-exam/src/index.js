@@ -12,13 +12,18 @@ import MenuItemList from './ch6/MenuItemList';
 import TestSample from './test_sample/TestSample';
 import NameList from './test_sample/NameList';
 import Counter from './ch7/Counter';
+import TestBefore from './ch7-2/TestBefore';
+import TestAfter from './ch7-2/TestAfter';
+import BeforeUseCallback from './ch7-3/BeforeUseCallback';
+import AfterUseCallback from './ch7-3/AfterUseCallback';
+import TestInputTest from './ch7/TestInputTest';
 
 // 생성주기를 테스트 하는 코드에서 React.StrictMode를 제거하고 실행하는게 가독성 면에서 좋다.
 ReactDOM.render(
   <React.StrictMode>
-    <Counter/>
+    <TestInputTest />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // setInterval(콜백함수, 시간(ms)) -> 특정 시간마다 첫번째 매개변수에서 정의한 함수가 실행
@@ -35,8 +40,6 @@ ReactDOM.render(
 //   document.getElementById('root')
 //   );
 // }, 1000);
-  
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
