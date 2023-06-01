@@ -21,11 +21,12 @@ import Accommodate from './ch7-0/Accommodate';
 import Toggle from './ch8/Toggle';
 import LandingPage from './ch9/LandingPage';
 import AttendanceBook from './ch10/AttendanceBook';
+import NameForm from './ch11/NameForm';
 
 // 생성주기를 테스트 하는 코드에서 React.StrictMode를 제거하고 실행하는게 가독성 면에서 좋다.
 ReactDOM.render(
   <React.StrictMode>
-    <AttendanceBook />
+    <NameForm />
   </React.StrictMode>,
   document.getElementById('root'),
 );
