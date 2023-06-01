@@ -5,11 +5,12 @@ import reportWebVitals from './reportWebVitals';
 import NameForm from './ch11/NameForm';
 import TestNullValue from './ch11/TestNullValue';
 import SignUp from './ch11-0/SignUp';
+import Calc from './ch12/Calc';
 
 // 생성주기를 테스트 하는 코드에서 React.StrictMode를 제거하고 실행하는게 가독성 면에서 좋다.
 ReactDOM.render(
   <React.StrictMode>
-    <SignUp />
+    <Calc />
   </React.StrictMode>,
   document.getElementById('root'),
 );
