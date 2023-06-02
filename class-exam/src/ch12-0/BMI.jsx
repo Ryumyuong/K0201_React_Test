@@ -1,21 +1,30 @@
 import React, { useState } from 'react';
 import BMIInput from './BMIInput';
 
-const BoilMessage = (props) => {
-  if (toBMI >= 25) {
-    return <p>비만</p>;
-  } else if(toBMI >= 23)
-  return <p>과체중</p>;
-};
-
-const toBMI = (height, weight) => {
-    const hei = height/100
-  return weight/hei*hei
-};
-
 const BMI = () => {
-  const [height, setHeight] = useState(0);
-  const [weight, setWeight] = useState(0);
+  const [height, setHeight] = useState('');
+  const [weight, setWeight] = useState('');
+
+  const toBMI = (height, weight) => {
+    const hei = height / 100;
+    return weight / (hei * hei);
+  };
+
+  const output = toBMI(height, weight);
+    const rounded = Math.round(output * 100) / 100;
+    const BMI = rounded.toString()
+
+  const BMIMessage = (props) => {
+    if (output >= 25) {
+      return <p>BMI가 {BMI}이므로 비만</p>;
+    } else if (output > 23) {
+      return <p>BMI가 {BMI}이므로 과체중</p>;
+    } else if (output > 18.5) {
+      return <p>BMI가 {BMI}이므로 정상</p>;
+    } else {
+      return <p>BMI가 {BMI}이므로 저체중</p>;
+    }
+  };
 
   const handleHeightChange = (height) => {
     setHeight(height);
@@ -27,9 +36,9 @@ const BMI = () => {
 
   return (
     <div>
-      <BMIInput scale="height" bmi={height} onTempChange={handleHeightChange} />
-      <BMIInput scale="weight" bmi={weight} onTempChange={handleWeightChange} />
-      <BoilMessage celsius={celsius} />
+      <BMIInput scale="height" status={height} onChange={handleHeightChange} />
+      <BMIInput scale="weight" status={weight} onChange={handleWeightChange} />
+      <BMIMessage toBMI={BMI} />
     </div>
   );
 };
