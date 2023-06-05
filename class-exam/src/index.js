@@ -2,23 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import NameForm from './ch11/NameForm';
-import TestNullValue from './ch11/TestNullValue';
-import SignUp from './ch11-0/SignUp';
-import Calc from './ch12/Calc';
-import BMI from './ch12-0/BMI';
-import WelcomeDialog from './ch13/WelcomeDialog';
-import ProfileCard from './ch13-0/ProfileCard';
-import Main from './ch14/Main';
-import MainPage from './ch15/MainPage';
-import Sample from './ch15/Sample';
-import Blocks from './ch15-0/Blocks';
 import Test2 from './ch15-0/Test2';
+import ItemList from './ch17-pdtest/ItemList';
 
 // 생성주기를 테스트 하는 코드에서 React.StrictMode를 제거하고 실행하는게 가독성 면에서 좋다.
 ReactDOM.render(
   <React.StrictMode>
-    <Test2 />
+    <ItemList />
   </React.StrictMode>,
   document.getElementById('root'),
 );
