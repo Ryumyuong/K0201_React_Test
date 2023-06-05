@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// &(this) contents와 다음 contents 사이의 간격설정
+// &(this) div와 다음 div 사이의 간격설정
 const PdItemBlock = styled.div`
   display: flex;
 
@@ -29,7 +29,7 @@ const PdItemBlock = styled.div`
       white-space: normal;
     }
   }
-  
+
   & + & {
     margin-top: 3rem;
   }
