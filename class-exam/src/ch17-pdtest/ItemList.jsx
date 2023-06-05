@@ -48,6 +48,16 @@ const ItemList = ({ category }) => {
             setArticles(response.data.getWalkingKr.item);
             break;
 
+            case 'festival':
+            var response = await axios.get(
+              'https://apis.data.go.kr/6260000/FestivalService/getFestivalKr?serviceKey=GWKc8ei%2F%2Fv5E4r5nUQ%2F8w2nKYXGrpkpylgECo0l5n6Zpxi0M2E%2BuPssZksZpDrkZm1q3o0YCJSfA8XXcaarhFQ%3D%3D&numOfRows=10&pageNo=1&resultType=json',
+            );
+            console.log(response.data.getFestivalKr.item);
+            setArticles(response.data.getFestivalKr.item);
+            break;
+
+            
+
           default:
             alert('카테고리 선택 해주세요');
         }

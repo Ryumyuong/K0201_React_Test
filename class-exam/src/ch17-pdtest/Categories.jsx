@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 const categories = [
   { name: 'food', text: '부산맛집정보 서비스' },
   { name: 'walking', text: '부산도보여행 정보 서비스' },
+  { name: 'festival', text: '부산 축제정보 서비스'}
 ];
 
 const CategoriesBlock = styled.div`
