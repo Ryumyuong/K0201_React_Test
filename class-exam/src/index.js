@@ -10,11 +10,13 @@ import BMI from './ch12-0/BMI';
 import WelcomeDialog from './ch13/WelcomeDialog';
 import ProfileCard from './ch13-0/ProfileCard';
 import Main from './ch14/Main';
+import MainPage from './ch15/MainPage';
+import Sample from './ch15/Sample';
 
 // 생성주기를 테스트 하는 코드에서 React.StrictMode를 제거하고 실행하는게 가독성 면에서 좋다.
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
+    <Sample />
   </React.StrictMode>,
   document.getElementById('root'),
 );
