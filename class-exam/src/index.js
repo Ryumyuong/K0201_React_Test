@@ -4,11 +4,19 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Test2 from './ch15-0/Test2';
 import ItemList from './ch17-pdtest/ItemList';
+import Categories from './ch17-pdtest/Categories';
+import App from './App';
+
+// const[category, setCategory] = useState('food')
+// const onSelect = useCallback(category => setCategory(category),[])
 
 // 생성주기를 테스트 하는 코드에서 React.StrictMode를 제거하고 실행하는게 가독성 면에서 좋다.
 ReactDOM.render(
   <React.StrictMode>
-    <ItemList />
+    <App />
+    {/* <ItemList /> */}
+    {/* <Categories category={category} onSelect={onSelect}/>
+    <ItemList category={category} /> */}
   </React.StrictMode>,
   document.getElementById('root'),
 );
