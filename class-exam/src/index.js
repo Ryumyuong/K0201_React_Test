@@ -1,23 +1,24 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Test2 from './ch15-0/Test2';
 import ItemList from './ch17-pdtest/ItemList';
-import Categories from './ch17-pdtest/Categories';
+import Categories from './ch17-pdtest/Components/Categories';
 import App from './App';
+import {BrowserRouter} from 'react-router-dom'
+import React, {useState, useCallback} from 'react';
+
+// BrowswerRouter -> 웹브러우저의 히스토리 기능을 이용해서 페이지 라우팅 하는 작업
 
 // const[category, setCategory] = useState('food')
 // const onSelect = useCallback(category => setCategory(category),[])
 
 // 생성주기를 테스트 하는 코드에서 React.StrictMode를 제거하고 실행하는게 가독성 면에서 좋다.
 ReactDOM.render(
-  <React.StrictMode>
+    <BrowserRouter>
     <App />
-    {/* <ItemList /> */}
-    {/* <Categories category={category} onSelect={onSelect}/>
-    <ItemList category={category} /> */}
-  </React.StrictMode>,
+    </BrowserRouter>
+,
   document.getElementById('root'),
 );
 
